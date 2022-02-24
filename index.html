@@ -5,71 +5,83 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Modelo</title>
+  <title>Portfólio - Guilherme Silva Antunes</title>
+  <link rel="stylesheet" href="./src/assets/css/style.css">
+  <link rel="stylesheet" href="./src/assets/css/icofont.min.css">
+  <link rel="stylesheet" href="./src/assets/css/icofont.css">
 </head>
 
 <body>
 
-  <section class="left-container">
-    <!-- 
-      Foto minha
-      Descrição curta
-      Depois nome, pretensão (ex: desenvolvedor backend), fone e email. 
-      Na parte inferior redes sociais
-      Background uma imagem que fique legal com ti
-
-      esse container pega uns 33% de width e 100 de height, fica fixado
-     -->
-    
-     <div class="left-container__person-image">
-       <img src="" alt="">
-       <p>Guilherme Silva Antunes</p>
-     </div>
-
-     <div class="left-container__person-description">
-       <p>Desenvolvedor <span>React Jr.</span> brasileiro e também apaixonado por <span>Node.js</span> e feliz em participar de projetos que desafiem meu conhecimento</p>
-     </div>
-
-     <div class="left-container__person-social-media">
-       <span>Linkedin</span>
-       <span>Github</span>
-       <span>e-mail</span>
-       <!-- <span>Facebook</span> -->
-       <!-- <span>Twitter</span> -->
-     </div>
-  </section>
-
-  <section class="right-container">
-    <!-- 
-      em cima fica o menu com HOME, PROJETOS, CURRICULO PRÉVIO, EVENTOS e um botão para download do currículo
-
-      O menu fica fixado no topo
-
-      Embaixo fica o que cada tab do menu recebe, com HOME como padrão
-
-      Para fazer as tabs, veja este vídeo (html, css e js): https://www.youtube.com/watch?v=5L6h_MrNvsk
-
-      Seria interessante cada um deles salvar o local que pararam na pagina ao voltar
-     -->
-
-     <div class="right-container-menu">
-       <ul class="menu__ul">
-         <li>Home</li>
-         <li>Projetos</li>
-         <li>Caminhada Dev</li>
-         <li>Eventos</li>
-         <li>Contato</li>
-       </ul>
-       <div class="menu__curriculum-button">
-         <a href="">Currículo</a>
+  <div class="container">
+    <section class="left-container">
+      <!-- 
+        Foto minha
+        Descrição curta
+        Depois nome, pretensão (ex: desenvolvedor backend), fone e email. 
+        Na parte inferior redes sociais
+        Background uma imagem que fique legal com ti
+  
+        esse container pega uns 33% de width e 100 de height, fica fixado
+       -->
+      
+       <div class="left-container__person-image">
+         <div class="person-img">
+           <img src="./src/assets/img/person_photo.jpg" alt="Foto do desenvolvedor">
+         </div>
+         <p>Guilherme Silva Antunes</p>
        </div>
-     </div>
+  
+       <div class="left-container__person-description">
+         <p>Sou um Desenvolvedor <span>React Junior</span> brasileiro apaixonado também por <span>Node.js</span> e feliz em participar de projetos que desafiam meu conhecimento na área de tecnologia.</p>
+       </div>
+  
+       <div class="left-container__person-social-media">
+         <span><a href="https://www.linkedin.com/in/guilherme-silva-antunes-b25084206/" target="_blank"><i class="icofont-linkedin"></i></a></span>
+         <span><a href="https://github.com/gui-s-antunes"><i class="icofont-github"></i></a></span>
+         <span><a href="mailto:guilherme.silva.antunes1999@gmail.com"><i class="icofont-email"></i></a></span>
+         <!-- <span>Facebook</span> -->
+         <!-- <span>Twitter</span> -->
+       </div>
+    </section>
+  
+    <section class="right-container">
+      <!-- 
+        em cima fica o menu com HOME, PROJETOS, CURRICULO PRÉVIO, EVENTOS e um botão para download do currículo
+  
+        O menu fica fixado no topo
+  
+        Embaixo fica o que cada tab do menu recebe, com HOME como padrão
+  
+        Para fazer as tabs, veja este vídeo (html, css e js): https://www.youtube.com/watch?v=5L6h_MrNvsk
+  
+        Seria interessante cada um deles salvar o local que pararam na pagina ao voltar
+       -->
+  
+       <div class="right-container-menu">
+         <ul class="menu__ul">
+           <li data-tab-target="#home">Home</li>
+           <li data-tab-target="#projetos">Projetos</li>
+           <li data-tab-target="#caminhada">Caminhada Dev</li>
+           <li data-tab-target="#eventos">Eventos</li>
+           <li data-tab-target="#contato">Contato</li>
+         </ul>
+         <div class="menu__curriculum-button">
+           <a href="">Currículo</a>
+         </div>
+       </div>
+  
+       <div class="tab-content">
+         <div id="home" class="right-container__home-tab"></div>
+         <div id="projetos" class="right-container__projetos-tab"></div>
+         <div id="caminhada" class="right-container__caminhada-tab"></div>
+         <div id="eventos" class="right-container__eventos-tab"></div>
+         <div id="contato" class="right-container__contato-tab"></div>
+       </div>
+  
+    </section>
+  </div>
 
-     <div class="right-container__home-tab"></div>
-     <div class="right-container__projetos-tab"></div>
-     <div class="right-container__caminhada-tab"></div>
-     <div class="right-container__eventos-tab"></div>
-  </section>
 
   <script src="./public/assets/js/bundle.js"></script>
 </body>
