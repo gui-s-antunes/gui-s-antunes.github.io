@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 :root {
-  --primary-color: rgb(17, 86, 102);
+  /* --primary-color: rgb(17, 86, 102); */
+  --primary-color: #1a1a1d;
   --primary-color-darker: rgb(9, 48, 56);
 }
 
@@ -22,6 +23,7 @@ body {
   display: flex;
 }
 
+/* CONTAINER ESQUERDO */
 /* PERSON IMAGEM AND TITLE */
 
 .left-container {
@@ -107,3 +109,69 @@ body {
   color: black;
 }
 
+/* CONTAINER DIREITO */
+/* Menu */
+
+.right-container {
+  width: 100%;
+}
+
+.right-container-menu {
+  width: 100%;
+  display: flex;
+  margin: 0;
+  top: 0;
+  position: sticky;
+  background-color: #1a1a1d;
+}
+
+.right-container-menu .menu__ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.right-container-menu .menu__ul li {
+  padding: .7em 1.5em;
+  cursor: pointer;
+  color: #efefef;
+  transition: all 400ms;
+}
+
+.right-container-menu .menu__ul li:hover {
+  background-color: #6f2232;
+}
+
+/* .right-container-menu .menu__curriculum-button {
+  border: 2px solid #efefef;
+  transition: all 400ms;
+  margin-right: .4em;
+}
+
+.right-container-menu .menu__curriculum-button:hover {
+  border-color: #6f2232;
+} */
+
+.right-container-menu .menu__curriculum-button a{
+  background-color: #6f2232;
+  text-decoration: none;
+  color: #efefef;
+  padding: .7em .4em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 400ms;
+}
+
+/* .right-container-menu .menu__curriculum-button a:hover {
+  color: #6f2232;
+  background-color: #efefef;
+} */
+
+.right-container-menu .menu__curriculum-button a i {
+  margin-left: .3em;
+}
