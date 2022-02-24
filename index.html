@@ -10,8 +10,65 @@
 
 <body>
 
-  <section class="container">
-    <h1>Lorem ipsum dolor sit amet</h1>
+  <section class="left-container">
+    <!-- 
+      Foto minha
+      Descrição curta
+      Depois nome, pretensão (ex: desenvolvedor backend), fone e email. 
+      Na parte inferior redes sociais
+      Background uma imagem que fique legal com ti
+
+      esse container pega uns 33% de width e 100 de height, fica fixado
+     -->
+    
+     <div class="left-container__person-image">
+       <img src="" alt="">
+       <p>Guilherme Silva Antunes</p>
+     </div>
+
+     <div class="left-container__person-description">
+       <p>Desenvolvedor <span>React Jr.</span> brasileiro e também apaixonado por <span>Node.js</span> e feliz em participar de projetos que desafiem meu conhecimento</p>
+     </div>
+
+     <div class="left-container__person-social-media">
+       <span>Linkedin</span>
+       <span>Github</span>
+       <span>e-mail</span>
+       <!-- <span>Facebook</span> -->
+       <!-- <span>Twitter</span> -->
+     </div>
+  </section>
+
+  <section class="right-container">
+    <!-- 
+      em cima fica o menu com HOME, PROJETOS, CURRICULO PRÉVIO, EVENTOS e um botão para download do currículo
+
+      O menu fica fixado no topo
+
+      Embaixo fica o que cada tab do menu recebe, com HOME como padrão
+
+      Para fazer as tabs, veja este vídeo (html, css e js): https://www.youtube.com/watch?v=5L6h_MrNvsk
+
+      Seria interessante cada um deles salvar o local que pararam na pagina ao voltar
+     -->
+
+     <div class="right-container-menu">
+       <ul class="menu__ul">
+         <li>Home</li>
+         <li>Projetos</li>
+         <li>Caminhada Dev</li>
+         <li>Eventos</li>
+         <li>Contato</li>
+       </ul>
+       <div class="menu__curriculum-button">
+         <a href="">Currículo</a>
+       </div>
+     </div>
+
+     <div class="right-container__home-tab"></div>
+     <div class="right-container__projetos-tab"></div>
+     <div class="right-container__caminhada-tab"></div>
+     <div class="right-container__eventos-tab"></div>
   </section>
 
   <script src="./public/assets/js/bundle.js"></script>
