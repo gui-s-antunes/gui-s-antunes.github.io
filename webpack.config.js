@@ -28,7 +28,7 @@ module.exports = {
           loader: 'file-loader',
           options: {
             name:'[name].[ext]',
-            outputPath: './src/assets/img/'
+            outputPath: './src/assets/img'
           }
         },
         {
