@@ -254,10 +254,18 @@ body {
   background-color: #4e4e50;
 }
 
-.mastering__description .description-container{
+.mastering__description div {
+  display: none;
+}
+
+.mastering__description div.description_show {
   display: flex;
   align-items: center;
 }
+
+/* .mastering__description .description-container{
+  display: none;
+} */
 
 .description-img{
   height: 70px;
@@ -266,8 +274,9 @@ body {
   margin-right: 1em;
 }
 
-.mastering_description-show {
-  /* display: block; */
-}
+/* .mastering_description-show {
+  display: flex;
+  align-items: center;
+} */
 
 
