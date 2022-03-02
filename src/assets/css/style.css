@@ -24,9 +24,25 @@ a {
   color: #efefef;
 }
 
+h1,h2,h3,h4,h5{
+  margin: 0;
+  padding: 0;
+  color: #efefef;
+}
+
 .span-highlight {
   border-bottom: 1px dotted #ffffff;
   font-weight: 800;
+}
+
+span.background {
+  border-radius: .3em;
+  padding: .3em .2em;
+  transition: background-color 400ms;
+}
+
+span.background:hover {
+  background-color: #4e4e50;
 }
 
 .container {
@@ -285,3 +301,42 @@ a {
 } */
 
 
+/* CONTATO */
+
+.right-container__contato-tab {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 100px;
+}
+
+.contato_info {
+  padding-right: 2em;
+}
+
+.contato_info h1 {
+  text-align: right;
+}
+
+.contato_info p {
+  text-align: right;
+}
+
+.contato_info p i {
+  margin-left: 10px;
+}
+
+.contato_info .contato_disponibilidade {
+  border-top: 2px solid #efefef;
+  padding-top: 1.5em;
+}
+
+.contato_google-maps {
+  padding-left: 2em;
+  border-left: 2px solid #efefef;
+}
+
+.contato_google-maps h1{
+  margin-bottom: 1em;
+  text-align: center;
+}
