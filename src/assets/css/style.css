@@ -19,6 +19,11 @@ body {
   line-height: 1.5em;
 }
 
+a {
+  text-decoration: none;
+  color: #efefef;
+}
+
 .span-highlight {
   border-bottom: 1px dotted #ffffff;
   font-weight: 800;
