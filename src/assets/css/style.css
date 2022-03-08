@@ -382,7 +382,67 @@ span.background:hover {
   text-align: center;
 }
 
+/* PROJETOS */
+
+.right-container__projetos-tab .projects-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-list .project-container {
+  border: 2px solid #efefef;
+  border-radius: .3em;
+  padding: .5em;
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+}
+
+.project-header .project-info {
+  flex-grow: 2;
+}
+
+.project-info p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.project-info p.project-name {
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+.project-header .container-opener {
+  /* flex-grow: 1; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 1em;
+  border-radius: .3em;
+}
+
+.project-header .container-opener:hover {
+  background-color: #777785;
+}
+
+.project-header .container-opener p i {
+  /* width: 200px; */
+}
+
+.project-container .project-details {
+  display: none;
+}
+
 /* CRESCIMENTO */
+
+.right-container__crescimento-tab h1.title {
+  margin-bottom: 2em;
+}
+
 
 .right-container__crescimento-tab .courses {
   display: flex;

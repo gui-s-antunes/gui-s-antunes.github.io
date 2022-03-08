@@ -60,11 +60,11 @@
   
        <div class="right-container-menu">
          <ul class="menu__ul">
-           <li data-tab-target="#home">Home</li>
-           <li data-tab-target="#projetos">Projetos</li>
-           <li data-tab-target="#crescimento">Crescimento</li>
-           <!-- <li data-tab-target="#eventos">Eventos</li> -->
-           <li data-tab-target="#contato">Contato</li>
+           <li data-menu-target="#home">Home</li>
+           <li data-menu-target="#projetos">Projetos</li>
+           <li data-menu-target="#crescimento">Crescimento</li>
+           <!-- <li data-menu-target="#eventos">Eventos</li> -->
+           <li data-menu-target="#contato">Contato</li>
          </ul>
          <div class="menu__curriculum-button">
            <a href="./pdf/curriculo/GulhermeSilvaAntunes_Curriculum_2022.pdf" target="_blank">Currículo<i class="icofont-external-link"></i></a>
@@ -72,7 +72,7 @@
        </div>
   
        <div class="tab-content">
-         <div id="home" class="right-container__home-tab">
+         <div id="home" class="right-container__home-tab active" data-menu-content>
            <p class="home__ola">Olá,</p>
            <p class="home__welcome">Bem-vindo ao meu portfólio!</p>
            <p class="home__introduction">
@@ -134,9 +134,42 @@
              </div>
            </div>
          </div>
-         <div id="projetos" class="right-container__projetos-tab"></div>
-         <div id="crescimento" class="right-container__crescimento-tab">
-          <h1>Este cantinho aqui é onde podemos ver cursos e aprimoramentos realizados e em curso!</h1>
+         <div id="projetos" class="right-container__projetos-tab" data-menu-content>
+           <!-- 
+             Container fechado - mostrando flecha, ao lado titulo do projeto e embaixo do titulo a descrição breve
+             Ao abrir, mostra abaixo as tecnologias utilizadas
+             Depois as imagens do projeto com descrição
+            -->
+            <h1 class="projects-title">Projetos principais feitos por mim e também a partir de aulas de terceiros</h1>
+            <div class="projects-list">
+              <div class="project-container">
+                <div class="project-header">
+                  <div class="project-info">
+                    <p class="project-name">Revisão de estudos</p>
+                    <p class="project-description">Uma aplicação em PHP que organiza os estudos em revisões periódicas</p>
+                  </div>
+                  <div class="container-opener">
+                    <p><i class="icofont-arrow-down"></i></p>
+                    <p class="arrow-p">Abrir</p>
+                  </div>
+                </div>
+
+                <div class="project-details">
+                  <div class="technologies">
+                    <p>O objetivo deste projeto foi permitir que eu pudesse adicionar qualquer estudo aprendido, para que a aplicação me dissesse quando deveria revisar o aprendizado</p>
+                    <p>Foi utilizado PHP tanto para fazer o back-end quanto para ser moldar os dados apresentados no front-end. O banco de dados utilizado foi o MySQL com o mysqli</p>
+                  </div>
+                  <div class="screen-detail">
+                    <img src="" alt="">
+                    <p class="screen-description"></p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+         </div>
+         <div id="crescimento" class="right-container__crescimento-tab" data-menu-content>
+          <h1 class="title">Este cantinho aqui é onde podemos ver cursos e aprimoramentos realizados e em curso!</h1>
           <div class="courses">
 
             <div class="course-container course-special">
@@ -262,7 +295,7 @@
           </div>
          </div>
          <!-- <div id="eventos" class="right-container__eventos-tab"></div> -->
-         <div id="contato" class="right-container__contato-tab">
+         <div id="contato" class="right-container__contato-tab" data-menu-content>
            <div class="contato_info">
              <div class="contato_informacoes">
                <h1>Informações</h1>
