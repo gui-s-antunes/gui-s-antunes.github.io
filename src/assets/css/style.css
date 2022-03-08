@@ -215,6 +215,10 @@ span.background:hover {
   background-color: #6f2232;
 }
 
+.right-container-menu .menu__ul li.active {
+  background-color: #6f2232;
+}
+
 /* .right-container-menu .menu__curriculum-button {
   border: 2px solid #efefef;
   transition: all 400ms;
@@ -250,6 +254,15 @@ span.background:hover {
 
 .tab-content {
   padding: 2em 4em;
+}
+
+.tab-content .right-container__home-tab, .tab-content .right-container__projetos-tab, 
+.tab-content .right-container__crescimento-tab, .tab-content .right-container__contato-tab {
+  display: none;
+}
+
+.tab-content div.active {
+  display: inline-block;
 }
 
 /* HOME CONTENT */
