@@ -11,19 +11,21 @@ import './assets/css/style.css';
 
     project_headers.forEach(project_header => {
         project_header.addEventListener('click', e => {
-            // project_header.parentNode.querySelector('.project-details').classList.toggle('active');
-            // const container_opener = project_header.querySelector('.container-opener');
-            // container_opener.querySelector('');
-
             const project_container = project_header.parentNode;
+
+            let icofont = '';
+            let opener_text = '';
             
             if(project_container.querySelector('.project-details.active')){
-                project_header.querySelector('.container-opener p i').className = 'icofont-arrow-down';
-                project_header.querySelector('.arrow-p').textContent = 'Abrir';
+                icofont = 'icofont-arrow-down';
+                opener_text = 'Abrir';
             } else{
-                project_header.querySelector('.container-opener p i').className = 'icofont-arrow-up';
-                project_header.querySelector('.arrow-p').textContent = 'Fechar';
+                icofont = 'icofont-arrow-up';
+                opener_text = 'Fechar';
             }
+
+            project_header.querySelector('.container-opener p i').className = icofont;
+            project_header.querySelector('.arrow-p').textContent = opener_text;
 
             project_container.querySelector('.project-details').classList.toggle('active');
         });
