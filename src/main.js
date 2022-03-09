@@ -7,6 +7,28 @@ import './assets/css/style.css';
     const description_imgs = document.querySelectorAll('[data-tab-target]');
     const description_texts = document.querySelectorAll('[data-tab-content]');
 
+    const project_headers = document.querySelectorAll('.project-header');
+
+    project_headers.forEach(project_header => {
+        project_header.addEventListener('click', e => {
+            // project_header.parentNode.querySelector('.project-details').classList.toggle('active');
+            // const container_opener = project_header.querySelector('.container-opener');
+            // container_opener.querySelector('');
+
+            const project_container = project_header.parentNode;
+            
+            if(project_container.querySelector('.project-details.active')){
+                project_header.querySelector('.container-opener p i').className = 'icofont-arrow-down';
+                project_header.querySelector('.arrow-p').textContent = 'Abrir';
+            } else{
+                project_header.querySelector('.container-opener p i').className = 'icofont-arrow-up';
+                project_header.querySelector('.arrow-p').textContent = 'Fechar';
+            }
+
+            project_container.querySelector('.project-details').classList.toggle('active');
+        });
+    });
+
 
     menu_btns.forEach(menu_btn => {
         menu_btn.addEventListener('click', e => {

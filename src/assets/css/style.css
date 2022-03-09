@@ -256,13 +256,18 @@ span.background:hover {
   padding: 2em 4em;
 }
 
-.tab-content .right-container__home-tab, .tab-content .right-container__projetos-tab, 
-.tab-content .right-container__crescimento-tab, .tab-content .right-container__contato-tab {
-  display: none;
+.tab-content section{
+  /* display: none; */
+  height: 0;
+  opacity: 0;
+  transition: height 2s, opacity 200ms;
+  overflow: hidden;
 }
 
-.tab-content div.active {
-  display: inline-block;
+.tab-content section.active {
+  /* display: block; */
+  height: auto;
+  opacity: 1;
 }
 
 /* HOME CONTENT */
@@ -411,6 +416,9 @@ span.background:hover {
 .project-header {
   display: flex;
   align-items: center;
+  background-color: #4e4e50;
+  border-radius: .3em;
+  cursor: pointer;
 }
 
 .project-header .project-info {
@@ -433,12 +441,11 @@ span.background:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
   padding: 0 1em;
   border-radius: .3em;
 }
 
-.project-header .container-opener:hover {
+.project-header:hover .container-opener {
   background-color: #777785;
 }
 
@@ -448,6 +455,10 @@ span.background:hover {
 
 .project-container .project-details {
   display: none;
+}
+
+.project-container .project-details.active {
+  display: block;
 }
 
 /* CRESCIMENTO */
