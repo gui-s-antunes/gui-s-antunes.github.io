@@ -9,6 +9,15 @@ import './assets/css/style.css';
 
     const project_headers = document.querySelectorAll('.project-header');
 
+    const $btnCopy = document.querySelectorAll('.btn-copy');
+
+    $btnCopy.forEach(btn => {
+        btn.addEventListener('click', e => {
+            const textValue = btn.parentNode.querySelector('.span-highlight').textContent;
+            navigator.clipboard.writeText(textValue);
+        });
+    });
+
     project_headers.forEach(project_header => {
         project_header.addEventListener('click', e => {
             const project_container = project_header.parentNode;
