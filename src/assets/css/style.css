@@ -428,22 +428,35 @@ span.background:hover {
 
 /* PROJETOS */
 
+.right-container__projetos-tab .projects-title {
+  font-size: 1.5em;
+  text-align: center;
+}
+
 .right-container__projetos-tab .projects-list {
   display: flex;
   flex-direction: column;
 }
 
 .projects-list .project-container {
-  border: 2px solid #efefef;
   border-radius: .3em;
   padding: .5em;
+  margin-top: .8em;
+  transition: all 500ms;
+  border: 1px solid transparent;
+}
+
+.projects-list .project-container:hover {
+  border: 1px solid #efefef;
+  box-shadow: 0 0 10px 0 rgba;
 }
 
 .project-header {
   display: flex;
   align-items: center;
-  background-color: #4e4e50;
+  background-color: #6f2232;
   border-radius: .3em;
+  padding: .5em;
   cursor: pointer;
 }
 
@@ -454,12 +467,15 @@ span.background:hover {
 .project-info p {
   margin: 0;
   padding: 0;
-  text-align: center;
+  text-align: left;
+  margin-left: 10px;
 }
 
 .project-info p.project-name {
   font-size: 1.3em;
   text-transform: uppercase;
+  color: #b9b9b9;
+  font-weight: 600;
 }
 
 .project-header .container-opener {
@@ -469,10 +485,20 @@ span.background:hover {
   align-items: center;
   padding: 0 1em;
   border-radius: .3em;
+  transition: all 700ms;
 }
 
 .project-header:hover .container-opener {
-  background-color: #777785;
+  background-color: #efefef;
+}
+
+.project-header .container-opener p {
+  color: #efefef;
+  transition: all 700ms;
+}
+
+.project-header:hover .container-opener p {
+  color: black;
 }
 
 .project-header .container-opener p i {
@@ -480,11 +506,18 @@ span.background:hover {
 }
 
 .project-container .project-details {
-  display: none;
+  /* display: none; */
+  max-height: 0;
+  opacity: 0;
+  transition: opacity 300ms, max-height 600ms ease-out;
+  overflow: hidden;
 }
 
 .project-container .project-details.active {
-  display: block;
+  /* display: block; */
+  opacity: 1;
+  max-height: 9999px;
+  transition: max-height 600ms ease-in;
 }
 
 /* CRESCIMENTO */
