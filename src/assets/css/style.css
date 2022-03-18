@@ -523,13 +523,15 @@ span.background:hover {
 .screen-detail {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items:stretch;
 }
 
 .arrow-left, .arrow-right {
   font-size: 50px;
   cursor: pointer;
   border-radius: .3em;
+  display: flex;
+  align-items: center;
 } 
 
 .arrow-left i {
@@ -548,11 +550,13 @@ span.background:hover {
   padding: 0;
   overflow: hidden;
   cursor: pointer;
+  transition: all 0ms linear;
 }
 
 .image-container.active {
   max-height: 9999px;
   max-width: 9999px;
+  transition: max-width 1s linear, max-height 200ms linear;
   margin: 0 1em;
   /* min-height: 800px; */
   background-color: white;

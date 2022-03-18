@@ -1,3 +1,5 @@
+import Carousel from './modules/Carousel';
+
 import './assets/css/style.css';
 
 (function(){
@@ -10,6 +12,27 @@ import './assets/css/style.css';
     const project_headers = document.querySelectorAll('.project-header');
 
     const $btnCopy = document.querySelectorAll('.btn-copy');
+
+    const $projectContainers = document.querySelectorAll('.project-container');
+
+    $projectContainers.forEach((projectContainer, index) => {
+        let arrow_left = projectContainer.querySelector('.arrow-left');
+        let arrow_right = projectContainer.querySelector('.arrow-right');
+        let images = projectContainer.querySelectorAll('.image-container');
+        
+        let imagesSlide = new Carousel(images);
+        
+        arrow_left.addEventListener('click', (e) => {
+            imagesSlide.previousDom();
+        });
+        arrow_right.addEventListener('click', (e) => {
+            imagesSlide.nextDom();
+        });
+
+        images.forEach(image => {
+            image.addEventListener('click', () => imagesSlide.nextDom());
+        })
+    });
 
     $btnCopy.forEach(btn => {
         btn.addEventListener('click', e => {
