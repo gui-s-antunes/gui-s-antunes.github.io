@@ -19,6 +19,8 @@ import './assets/css/style.css';
         let arrow_left = projectContainer.querySelector('.arrow-left');
         let arrow_right = projectContainer.querySelector('.arrow-right');
         let images = projectContainer.querySelectorAll('.image-container');
+
+        if(images.length < 2) return;
         
         let imagesSlide = new Carousel(images);
         

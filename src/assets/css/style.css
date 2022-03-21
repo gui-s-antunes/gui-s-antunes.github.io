@@ -564,7 +564,7 @@ span.background:hover {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   margin-bottom: 1em;
 }
@@ -579,6 +579,7 @@ span.background:hover {
   justify-content: center;
   align-items: center;
   width: 100%;
+  border-bottom: 2px solid #6f2232;
 }
 
 .image-container img {
@@ -588,7 +589,10 @@ span.background:hover {
 }
 
 .image-container .image-description {
+  text-align: justify;
   color: black;
+  padding: 1em 1.5em;
+  margin: 0;
 }
 
 
