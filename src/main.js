@@ -15,6 +15,14 @@ import './assets/css/style.css';
 
     const $projectContainers = document.querySelectorAll('.project-container');
 
+    const $menuHambuger = document.querySelector('.hamburger-menu');
+    const $tabsContainer = document.querySelector('.right-container-menu');
+
+    $menuHambuger.addEventListener('click', e => {
+        $menuHambuger.classList.toggle('active');
+        $tabsContainer.classList.toggle('active');
+    })
+
     $projectContainers.forEach((projectContainer, index) => {
         let arrow_left = projectContainer.querySelector('.arrow-left');
         let arrow_right = projectContainer.querySelector('.arrow-right');
