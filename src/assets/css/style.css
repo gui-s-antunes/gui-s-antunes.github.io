@@ -120,12 +120,15 @@ span.background:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 0 7px;
 }
 
 .left-container__person-image .hamburger-menu{
   margin-right: 20px;
   cursor: pointer;
   transition: transform 300ms;
+  text-align: left;
+  flex-grow: 0;
 }
 
 .left-container__person-image .hamburger-menu.active {
@@ -146,6 +149,7 @@ span.background:hover {
 
 .left-container__person-image p{
   /* color: white; */
+  flex-grow: 1;
 }
 
 /* PERSON DESCRIPTION */
