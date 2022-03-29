@@ -821,6 +821,10 @@ span.background:hover {
     align-items: center;
     margin-top: 100px;
   }
+
+  .left-container__person-image .hamburger-menu {
+    display: none;
+  }
   
   .left-container__person-image .person-img {
     width: 150px;
@@ -892,6 +896,29 @@ span.background:hover {
     width: 100vw;
     padding-left: 350px;
     overflow: hidden;
+  }
+
+  .right-container-menu {
+    /* width: 100%; */
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    background-color: #1a1a1d;
+    justify-content: center;
+    width: calc(100% - 350px);
+  }
+
+
+  .right-container-menu .menu__ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
   }
   
 }
