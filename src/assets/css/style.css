@@ -656,7 +656,7 @@ span.background:hover {
     overflow: hidden;
   }
   
-  .course-special {
+  .course-container.course-special {
     border: 2px dotted #6f2232;
     box-shadow: 0 0 10px 0 rgba(109, 34, 49, .8);
   }
@@ -758,6 +758,10 @@ span.background:hover {
     height: 200px;
     justify-content: center;
     margin-bottom: 1.5em;
+  }
+
+  .course-container .course-title {
+    border-right: 1px solid #6f2232;
   }
 
   /*  */
