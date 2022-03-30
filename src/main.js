@@ -18,6 +18,10 @@ import './assets/css/style.css';
     const $menuHambuger = document.querySelector('.hamburger-menu');
     const $tabsContainer = document.querySelector('.right-container-menu');
 
+    const scrollToTop = () => {
+        window.scrollTo(0, 0);
+    }
+
     $menuHambuger.addEventListener('click', e => {
         $menuHambuger.classList.toggle('active');
         $tabsContainer.classList.toggle('active');
@@ -86,6 +90,8 @@ import './assets/css/style.css';
             menu_btn.classList.add('active');
             const text = document.querySelector(menu_btn.dataset.menuTarget);
             text.classList.add('active');
+
+            scrollToTop();
         })
     });
 
