@@ -401,10 +401,6 @@ span.background:hover {
     /* margin-top: 100px; */
   }
   
-  .contato_info {
-    /* padding-right: 2em; */
-  }
-  
   .contato_info h1 {
     text-align: center;
   }
@@ -972,5 +968,67 @@ span.background:hover {
     padding-right: 1em;
     margin-right: 1em;
   }
+
+  /* CONTATO 1200PX */
+  .right-container__contato-tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 100px;
+  }
+
+  .contato_info {
+    padding-right: 2em;
+    border-right: 2px solid #efefef;
+  }
+
+  .contato_google-maps {
+    border-top: 0;
+    padding-top: 0;
+    padding-left: 2em;
+  }
+
+  .contato_google-maps iframe {
+    width: 300px;
+    height: 330px;
+  }
+}
+
+@media screen and (min-width: 1600px){
+  /* CONTATO 1200PX */
+  .right-container__contato-tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 100px;
+  }
+  
+  .contato_info {
+    padding-right: 2em;
+    border-right: 2px solid #efefef;
+    font-size: 20px;
+  }
+  
+  .contato_info p {
+    font-size: 20px;
+  }
+
+  .contato_fone .btn-copy, .contato_email .btn-copy {
+    display: inline-block;
+  }
+
+  .contato_google-maps {
+    border-top: 0;
+    padding-top: 0;
+    padding-left: 2em;
+  }
+
+  .contato_google-maps iframe {
+    width: 400px;
+    height: 380px;
+  }
+
 }
 
