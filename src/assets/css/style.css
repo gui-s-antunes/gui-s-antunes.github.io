@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 :root {
-  /* --primary-color: rgb(17, 86, 102); */
   --primary-color: #1a1a1d;
   --primary-color-darker: rgb(9, 48, 56);
 }
@@ -10,7 +9,6 @@
 }
 
 ::-webkit-scrollbar-track {
-  /* background-color: #777785; */
   border: 2px solid rgb(64, 64, 64);
 }
 
@@ -96,26 +94,19 @@ span.background:hover {
 /* CONTAINER ESQUERDO */
 
 .left-container {
-  /* box-sizing: border-box; */
   z-index: 2;
   margin: 0;
   padding: 0;
   position: fixed;
   top: 0;
-  /* max-width: 350px; */
   width: 100vw;
   max-width:100%;
   height: 70px;
   color: white;
   background-color: #6f2232
-  /* box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7); */
-  /* background-image: url("./../img/fundoleft.jpg"); */
-  /* background-position: bottom; */
-  /* background-size: cover; */
 }
 
 .left-container__person-image{
-  /* width: 100%; */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -148,7 +139,6 @@ span.background:hover {
 }
 
 .left-container__person-image p{
-  /* color: white; */
   flex-grow: 1;
 }
 
@@ -206,7 +196,6 @@ span.background:hover {
   }
   
   .right-container-menu {
-    /* width: 100%; */
     z-index: 2;
     position: fixed;
     top: 70px;
@@ -245,16 +234,6 @@ span.background:hover {
     background-color: #6f2232;
   }
   
-  /* .right-container-menu .menu__curriculum-button {
-    border: 2px solid #efefef;
-    transition: all 400ms;
-    margin-right: .4em;
-  }
-  
-  .right-container-menu .menu__curriculum-button:hover {
-    border-color: #6f2232;
-  } */
-  
   .right-container-menu .menu__curriculum-button a{
     background-color: #6f2232;
     text-decoration: none;
@@ -266,12 +245,7 @@ span.background:hover {
     align-items: center;
     transition: all 400ms;
   }
-  
-  /* .right-container-menu .menu__curriculum-button a:hover {
-    color: #6f2232;
-    background-color: #efefef;
-  } */
-  
+    
   .right-container-menu .menu__curriculum-button a i {
     margin-left: .3em;
   }
@@ -284,7 +258,6 @@ span.background:hover {
   }
   
   .tab-content section{
-    /* display: none; */
     height: 0;
     opacity: 0;
     transition: height 2s, opacity 200ms;
@@ -292,7 +265,6 @@ span.background:hover {
   }
   
   .tab-content section.active {
-    /* display: block; */
     height: auto;
     opacity: 1;
   }
@@ -334,7 +306,6 @@ span.background:hover {
   }
   
   .home__mastering-tecnologies .mastering__imgs .mastering__imgs-img{
-    /* width: 150px; */
     padding: .4em;
     margin: .2em;
     border-radius: .3em;
@@ -374,31 +345,18 @@ span.background:hover {
     align-items: center;
   }
   
-  /* .mastering__description .description-container{
-    display: none;
-  } */
-  
   .description-img{
     height: 70px;
     border-bottom: 2px solid #efefef;
     padding-bottom: 1em;
     margin-bottom: 1em;
   }
-  
-  /* .mastering_description-show {
-    display: flex;
-    align-items: center;
-  } */
-  
-  
+
   /* CONTATO */
   
   .right-container__contato-tab {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: baseline; */
-    /* margin-top: 100px; */
   }
   
   .contato_info h1 {
@@ -512,7 +470,6 @@ span.background:hover {
   }
   
   .project-header .container-opener {
-    /* flex-grow: 1; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -533,13 +490,8 @@ span.background:hover {
   .project-header:hover .container-opener p {
     color: black;
   }
-  
-  .project-header .container-opener p i {
-    /* width: 200px; */
-  }
-  
+    
   .project-container .project-details {
-    /* display: none; */
     max-height: 0;
     opacity: 0;
     transition: opacity 300ms, max-height 600ms ease-out;
@@ -547,7 +499,6 @@ span.background:hover {
   }
   
   .project-container .project-details.active {
-    /* display: block; */
     opacity: 1;
     max-height: 9999px;
     transition: max-height 600ms ease-in;
@@ -579,13 +530,11 @@ span.background:hover {
     max-width: 9999px;
     transition: max-width 1s linear, max-height 200ms linear;
     margin: 0 1em;
-    /* min-height: 800px; */
     background-color: white;
     border-radius: .4em;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
     margin-bottom: 1em;
   }
@@ -624,7 +573,6 @@ span.background:hover {
     border-bottom: 1px dotted #efefef;
   }
   
-  
   /* CRESCIMENTO */
   
   .right-container__crescimento-tab h1.title {
@@ -651,7 +599,6 @@ span.background:hover {
   .course-container .course-title {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     min-width: 300px;
     background-color: #1a1a1d;
     padding: 0 1.5em;
@@ -676,22 +623,16 @@ span.background:hover {
     text-align: center;
     text-transform: uppercase;
   }
-  
-  /* .course-title .course-name img{
-    width: 40px;
-  } */
-  
+    
   .course-title .course-site {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-top: .5em; */
     padding: .5em 0;
     border-top: 1px solid #efefef;
   }
   
   .course-title .course-site img {
-    /* width: 20px; */
     height: 30px;
     margin-right: 15px;
   }
@@ -731,8 +672,6 @@ span.background:hover {
     margin-right: 5px;
     color: rgb(10, 109, 175);
   }
-
-/*  */
 
 @media screen and (min-width: 700px) {
 
@@ -784,7 +723,6 @@ span.background:hover {
   }
   
   .course-container:hover .course-title p.learning-state {
-    /* background-color: black; */
     bottom: 0;
   }
   
@@ -860,10 +798,6 @@ span.background:hover {
     width: 100%;
   }
   
-  .left-container__person-image p{
-    /* color: white; */
-  }
-  
   /* PERSON DESCRIPTION */
   
   .left-container__person-description{
@@ -920,7 +854,6 @@ span.background:hover {
   }
 
   .right-container-menu {
-    /* width: 100%; */
     z-index: 2;
     position: fixed;
     top: 0;
@@ -931,7 +864,6 @@ span.background:hover {
     justify-content: center;
     width: calc(100% - 350px);
   }
-
 
   .right-container-menu .menu__ul {
     margin: 0;
