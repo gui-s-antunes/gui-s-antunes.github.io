@@ -522,13 +522,13 @@ span.background:hover {
     padding: 0;
     overflow: hidden;
     cursor: pointer;
-    transition: all 0ms linear;
+    /* transition: all 0ms linear; */
   }
   
   .image-container.active {
     max-height: 9999px;
     max-width: 9999px;
-    transition: max-width 1s linear, max-height 200ms linear;
+    /* transition: max-width 1s linear, max-height 200ms linear; */
     margin: 0 1em;
     background-color: white;
     border-radius: .4em;
@@ -554,6 +554,7 @@ span.background:hover {
   
   .image-container img {
     max-width: 100%;
+    max-height: 100%;
     margin: 0;
     padding: 0;
   }

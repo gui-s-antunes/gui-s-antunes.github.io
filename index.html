@@ -128,6 +128,151 @@
                 <div class="project-container">
                   <div class="project-header">
                     <div class="project-info">
+                      <p class="project-name">Flashcards</p>
+                      <p class="project-description">Sistema de estudo de Flashcards em React e com API</p>
+                    </div>
+                    <div class="container-opener">
+                      <p><i class="icofont-arrow-down"></i></p>
+                      <p class="arrow-p">Abrir</p>
+                    </div>
+                  </div>
+  
+                  <div class="project-details">
+                    <div class="technologies">
+                      <p><i class="icofont-rounded-right"></i>Projeto que funciona com sistema de Decks, e tais decks recebem Cards com frente e verso. Uma forma simples de aprendizado.</p>
+                      <p><i class="icofont-rounded-right"></i>O usuário cria uma Deck e dentro quantas Cards quiser. O aplicativo gerenciará o estudo de forma parecida com o Anki, um sistema muito utilizado.</p>
+                      <p><i class="icofont-rounded-right"></i>O front-end utiliza React. Para se comunicar com o back-end, utilizo o axios. Também está na aplicação React Redux, para o login e register do usuário. E o roteamento das páginas é feita pela versão 6 do React-Router-DOM.</p>
+                      <p><i class="icofont-rounded-right"></i>O back-end foi desenvolvido como uma API. Ele se comunica com o banco de dados (MariaDB) por meio do Sequelize e foi desenvolvido usando node.js com express.js.</p>
+                      <p class="repo-link"><i class="icofont-link"></i>Repositório: <a href="https://github.com/gui-s-antunes/flashcard-react" target="_blank">GitHub - Flashcard React</a></p>
+                      <p class="repo-link"><i class="icofont-link"></i>Repositório: <a href="https://github.com/gui-s-antunes/flashcard-api" target="_blank">GitHub - Flashcard API</a></p>
+                    </div>
+                    <div class="screen-detail">
+                      <p class="arrow-left"><i class="icofont-dotted-left"></i></p>
+                      <div class="image-container active">
+                        <div class="image-config">
+                          <img src="./src/assets/img/flashcard_home.png" alt="página inicial do projeto de flashcards">
+                        </div>
+                        <p class="image-description">A página inicial exibe todas as revisões de Cards, separando por Decks. Decks sem Cards para revisões não aparecerão!</p>
+                      </div>
+                      <div class="image-container">
+                        <div class="image-config">
+                          <img src="./src/assets/img/flashcard_decks.png" alt="página inicial do projeto de flashcards">
+                        </div>
+                        <p class="image-description">A página de Decks permite a criação de Decks, a sua deleção e edição de Cards.</p>
+                      </div>
+                      <div class="image-container">
+                        <div class="image-config">
+                          <img src="./src/assets/img/flashcard_decks_edit1.png" alt="página inicial do projeto de flashcards">
+                        </div>
+                        <p class="image-description">Ao apertar em edit do Deck, ele exibirá opção para alterar nome do Deck e também a lista de Cards.</p>
+                      </div>
+                      <div class="image-container">
+                        <div class="image-config">
+                          <img src="./src/assets/img/flashcard_decks_edit2.png" alt="página inicial do projeto de flashcards">
+                        </div>
+                        <p class="image-description">E, ao final do container, é possível visualizar a Card, assim como ir à página de edição.</p>
+                      </div>
+                      <div class="image-container">
+                        <div class="image-config">
+                          <img src="./src/assets/img/flashcard_decks_card_edit.png" alt="página inicial do projeto de flashcards">
+                        </div>
+                        <p class="image-description">A edição da Card é bem simples de entender. É como passar a borracha e inserir novas informações, inclusive a Deck que pertence.</p>
+                      </div>
+                      <div class="image-container">
+                        <div class="image-config">
+                          <img src="./src/assets/img/flashcard_card_create.png" alt="página inicial do projeto de flashcards">
+                        </div>
+                        <p class="image-description">A criação de Card utiliza a mesma página que a edição. Ela vai criar a revisão no dia de sua criação.</p>
+                      </div>
+                      <div class="image-container">
+                        <div class="image-config">
+                          <img src="./src/assets/img/flashcard_revise1.png" alt="página inicial do projeto de flashcards">
+                        </div>
+                        <p class="image-description">Ao revisar uma card, apertando no ícone do livro da página inicial, você se depara com a card a ser estudada. Ela exibe a frente e você descobre o verso.</p>
+                      </div>
+                      <div class="image-container">
+                        <div class="image-config">
+                          <img src="./src/assets/img/flashcard_revise2.png" alt="página inicial do projeto de flashcards">
+                        </div>
+                        <p class="image-description">E, ao apertar para saber o verso, ele aparece e você tem a opção de falar que acertou ou errou a resposta. Se errar, a card vai para o fim da fila e reinicia a data de estudo. Se acertar, ela sai da fila e retorna um outro dia marcado automaticamente</p>
+                      </div>
+                      <p class="arrow-right"><i class="icofont-dotted-right"></i></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="project-container">
+                  <div class="project-header">
+                    <div class="project-info">
+                      <p class="project-name">Pomodoro</p>
+                      <p class="project-description">Pomodoro simples desenvolvido utilizando React</p>
+                    </div>
+                    <div class="container-opener">
+                      <p><i class="icofont-arrow-down"></i></p>
+                      <p class="arrow-p">Abrir</p>
+                    </div>
+                  </div>
+  
+                  <div class="project-details">
+                    <div class="technologies">
+                      <p><i class="icofont-rounded-right"></i>Um projeto que permite auxiliar o tempo de produção do usuário. Ele pode utilizar esta aplicação para aplicar o método Pomodoro.</p>
+                      <p><i class="icofont-rounded-right"></i>A página controla o tempo de produção, de descanso e permite pausar. O usuário pode adicionar os toques que soam ao começo e final de um Pomodoro, além de um ciclo completo com maior descanso.</p>
+                      <p><i class="icofont-rounded-right"></i>A aplicação utiliza React escrito em Typescript, facilitando a compreensão do comportamento da página.</p>
+                      <p class="repo-link"><i class="icofont-link"></i>Repositório: <a href="https://github.com/gui-s-antunes/pomodoro-simple-react" target="_blank">GitHub - Pomodoro Simple React</a></p>
+                    </div>
+                    <div class="screen-detail">
+                      <p class="arrow-left"><i class="icofont-dotted-left"></i></p>
+                      <div class="image-container active">
+                        <div class="image-config">
+                          <img src="./src/assets/img/pomodoro.jpeg" alt="página do pomodoro">
+                        </div>
+                        <p class="image-description">Podemos ver o Pomodoro sendo executado. Há um temporizador do tempo restante. Também podemos ver um bloco com o tempo de produção, os números de ciclos e pomodoros finalizados. Também é possível ver a seleção de sons, que pode ser usufruido a qualquer instante</p>
+                      </div>
+                      <p class="arrow-right"><i class="icofont-dotted-right"></i></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="project-container">
+                  <div class="project-header">
+                    <div class="project-info">
+                      <p class="project-name">Red Luigi Jump</p>
+                      <p class="project-description">Jogo em Typescript do Mario, usando princípio S.O.L.I.D.</p>
+                    </div>
+                    <div class="container-opener">
+                      <p><i class="icofont-arrow-down"></i></p>
+                      <p class="arrow-p">Abrir</p>
+                    </div>
+                  </div>
+  
+                  <div class="project-details">
+                    <div class="technologies">
+                      <p><i class="icofont-rounded-right"></i>Um projeto simples que o Mario deve pular os canos do game, estilo jogo do dinossauro do Google Chrome.</p>
+                      <p><i class="icofont-rounded-right"></i>O projeto usa organização de código utilizando o princípio S.O.L.I.D, que facilita a compreensão do código e futuras alterações e manutenções. Utilizado Typescript.</p>
+                      <p class="repo-link"><i class="icofont-link"></i>Repositório: <a href="https://github.com/gui-s-antunes/red-luigi-jump" target="_blank">GitHub - Red Luigi Jump</a></p>
+                    </div>
+                    <div class="screen-detail">
+                      <p class="arrow-left"><i class="icofont-dotted-left"></i></p>
+                      <div class="image-container active">
+                        <div class="image-config">
+                          <img src="./src/assets/img/mario_jump.jpeg" alt="cena do jogo do mario">
+                        </div>
+                        <p class="image-description">Cena do jogo correndo. Podemos ver que há um contador de pontos. O cano se move em direção ao Mario. O mario pode pular.</p>
+                      </div>
+                      <div class="image-container">
+                        <div class="image-config">
+                          <img src="./src/assets/img/mario_jump2.jpeg" alt="cena do jogo do mario">
+                        </div>
+                        <p class="image-description">Menu do jogo. Mostrado no início e após morrer, podemos ver a pontuação, a maior pontuação e o sprite do Mario reagindo ao fim do jogo.</p>
+                      </div>
+                      <p class="arrow-right"><i class="icofont-dotted-right"></i></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="project-container">
+                  <div class="project-header">
+                    <div class="project-info">
                       <p class="project-name">Revisão de estudos</p>
                       <p class="project-description">Uma aplicação em PHP que organiza os estudos em revisões periódicas</p>
                     </div>

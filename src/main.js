@@ -18,6 +18,21 @@ import './assets/css/style.css';
     const $menuHambuger = document.querySelector('.hamburger-menu');
     const $tabsContainer = document.querySelector('.right-container-menu');
 
+    const $slideImageContainer = document.querySelectorAll('.image-config');
+
+    const slideContainerWidth = ($slideImageContainer[0].offsetWidth / 16 * 9).toString() + 'px';
+
+    $slideImageContainer.forEach(container => {
+        // const containerWidth = container.offsetWidth;
+        // console.log('width: ', containerWidth);
+        // console.log('height: ', container.offsetHeight);
+        // const newHeight = (containerWidth / 16 * 9).toString() + 'px';
+        container.style.maxHeight = slideContainerWidth;
+        container.style.height = slideContainerWidth;
+        console.log('height agora:: ', container.offsetHeight);
+        container.style.margin = '1px';
+    })
+
     const scrollToTop = () => {
         window.scrollTo(0, 0);
     }
