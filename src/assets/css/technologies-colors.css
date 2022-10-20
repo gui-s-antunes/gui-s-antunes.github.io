@@ -1,0 +1,59 @@
+.tecnologias-utilizadas-title div{
+    font-size: 12px;
+    padding: 1px 4px;
+    border-radius: 5px;
+    display: inline;
+    color: #ffffff;
+}
+
+.react-color{
+    background-color: #3090c7;   
+}
+
+.typescript-color{
+    background-color: #158999;
+}
+
+.vite-color {
+    background-color: #9400d3;
+}
+
+.tecnologias-utilizadas-title .javascript-color{
+    background-color: #faf884;
+    color: #36454f;
+}
+
+.tecnologias-utilizadas-title .node-js-color{
+    background-color: #64e986;
+    color: #36454f;
+}
+
+.axios-color{
+    background-color: #738aff;
+}
+
+.tecnologias-utilizadas-title .express-js-color{
+    background-color: #64e986;
+    color: #36454f;
+}
+
+.sql-color{
+    background-color: #36454f;
+}
+
+.sequelize-color{
+    background-color: #342d7e;
+}
+
+.tecnologias-utilizadas-title .extra-color{
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.php-color{
+    background: #736aff;
+}
+
+.python-color{
+    background-color: #614051;
+}
