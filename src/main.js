@@ -47,7 +47,11 @@ import './assets/css/style.css';
         let arrow_right = projectContainer.querySelector('.arrow-right');
         let images = projectContainer.querySelectorAll('.image-container');
 
-        if(images.length < 2) return;
+        if(images.length < 2){
+            arrow_left.setAttribute('class', `${arrow_left.getAttribute('class')} off`)
+            arrow_right.setAttribute('class', `${arrow_right.getAttribute('class')} off`)
+            return;
+        } 
         
         let imagesSlide = new Carousel(images);
         

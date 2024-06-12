@@ -679,7 +679,6 @@ span.background:hover {
   /* image arrows */
   .arrow-left, .arrow-right {
     font-size: 50px;
-    cursor: pointer;
     border-radius: .3em;
     display: flex;
     align-items: center;
@@ -691,6 +690,11 @@ span.background:hover {
   
   .arrow-left:hover, .arrow-right:hover {
     background-color: #6f2232;
+    cursor: pointer;
+  }
+
+  .arrow-left.off, .arrow-right.off {
+    display: none;
   }
 
   /* courses container */
